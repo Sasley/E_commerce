@@ -20,7 +20,19 @@ Product.init(
       allowNull: false,
     }
     price: {
-      
+     type: DataTypes.DECIMAL,
+     allowNull: false,
+     validates: DataTypes.DECIMAL
+    }
+    {
+      stock: {
+        type: DataTypes. INTEGER,
+      allowNull: false,
+      defaultValue: "10",
+
+
+
+      }
     }
   },
   {
